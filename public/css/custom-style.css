@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+/* nav.navbar.bootsnav.main-nav ul > li > a{
+    font-size:  32px !important;
+} */
+/* .main-nav ul > li > a {
+    font-size: 32px !important;
+} */
+
+a.main-nav {
+    font-size: 32px !important;
+}

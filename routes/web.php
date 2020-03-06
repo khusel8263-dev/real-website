@@ -12,5 +12,11 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('home');
 });
+Route::get('#contact', function () {
+    return view('success');
+});
+
+Route::get('/contact', 'SendEmailController@index');
+Route::post('/contact', 'SendEmailController@send');
