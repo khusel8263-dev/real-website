@@ -11,6 +11,8 @@
         <meta name="description" content="Ашид Софт ХХК - Програм хангамжийн компани.">
         <!-- keywords -->
         <meta name="keywords" content="Ашид Софт ХХК, Ashid Soft LLC, програм хангамж, software, Ashid Dental, Шүдний эмнэлгийн програм, Ashid ERP, вэб сайт">
+        
+        <meta name="csrf-token" content="{{ csrf_token() }}">
         <!-- favicon -->
         <link rel="shortcut icon" href="images/favicon.png">
         <link rel="apple-touch-icon" href="images/apple-touch-icon-57x57.png">
@@ -498,7 +500,7 @@
         <script type="text/javascript" src="revolution/js/extensions/revolution.extension.video.min.js"></script>
         <!-- setting -->
         <script type="text/javascript" src="js/main.js"></script>        
-        <!-- <script src="{{ asset('js/app.js') }}"></script> -->
+        <script src="{{ asset('js/app.js') }}"></script>
     </body>
 </html>
     

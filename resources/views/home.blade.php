@@ -848,8 +848,8 @@
                 <div class="col-12 col-lg-6 wow fadeIn">
                     <div class="padding-fifteen-all bg-white border-radius-6 lg-padding-seven-all">
                         <div class="text-extra-dark-gray alt-font text-large font-weight-600 margin-30px-bottom">Бидэнтэй холбогдох</div> 
-                        <div>                                
-                            <form id="contact-form" action="javascript:void(0);" method="post">                                                              
+                        <div id="app">                                
+                            <!-- <form id="contact-form" action="javascript:void(0);" method="post">                                                              
                                 <div id="success-contact-form" class="mx-0" style="font-size:14pt;"></div>
                                 <input type="text" name="name" id="name" placeholder="Таны нэр*" class="input-bg">
                                 <input type="text" name="email" id="email" placeholder="И-мэйл хаяг*" class="input-bg">
@@ -857,7 +857,8 @@
                                 <textarea name="message" id="comment" placeholder="Таны захиа*" class="input-bg"></textarea>                                    
                                 <button id="contact-us-button" type="submit" class="btn btn-small border-radius-4 btn-black">Илгээх</button>                                    
                                 {{ csrf_field() }}  
-                            </form>
+                            </form> -->
+                            <contact-form></contact-form>
                         </div>
                     </div>
                 </div>
