@@ -19,7 +19,13 @@
         <input v-model="contact.subject" type="text" name="subject" id="subject" placeholder="Агуулга" class="input-bg">
         
         <textarea v-model="contact.message" v-bind:class="{'required-error': errors && errors.message}" name="message" id="comment" placeholder="Таны захиа*" class="input-bg"></textarea>                                    
-        
+                
+        <vue-recaptcha ref="recaptcha" 
+                @verify="onCaptchaVerified"
+                @expired="onCaptchaExpired"
+                size="invisible"
+                sitekey="6Lf3B8YZAAAAADWDBMFWmcNcGoMCzVdamaUJyajb" >          
+        </vue-recaptcha>
         <button id="contact-us-button" type="submit" class="btn btn-small border-radius-4 btn-black">Илгээх</button>
     </form>
     </div>
@@ -30,6 +36,7 @@
     import Loading from 'vue-loading-overlay';
     // Import stylesheet
     import 'vue-loading-overlay/dist/vue-loading.css';
+    import VueRecaptcha from 'vue-recaptcha';
 
     export default {
         data() {
@@ -38,18 +45,23 @@
                 fullPage: true,
 
                 contact: {},
-                success: false,
+                success: false,                
                 errors: {},
             }
         },
         components: {
-            Loading
+            Loading,
+            VueRecaptcha
         },
         methods: {
-            submit() {             
-                this.isLoading = true;
+            submit: function () {   
+                this.isLoading = true;         
+                this.$refs.recaptcha.execute();
+            },
+            onCaptchaVerified: function (recaptchaToken) {                
                 this.success = false;
-                this.errors = {};
+                this.errors = {};          
+                this.$refs.recaptcha.reset();
                 axios.post('/contact', this.contact)
                 .then(response => {
                     this.contact = {};
@@ -57,15 +69,18 @@
                     this.isLoading = false;
                 })
                 .catch(error => {
-                    this.isLoading = false;
+                    this.isLoading = false;                    
                     if (error.response.status === 422) {
-                        this.errors = error.response.data.errors || {};
+                        this.errors = error.response.data.errors || {};                            
                     }
                     else {
                         this.errors = {fatal: error.response.status};                        
                     }
-                });
+                });                
             },
+            onCaptchaExpired: function () {
+                this.$refs.recaptcha.reset();
+            }
         },
     }
 </script>

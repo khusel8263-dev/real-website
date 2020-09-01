@@ -49,6 +49,8 @@
         <!--[if IE]>
             <script src="js/html5shiv.js"></script>
         <![endif]-->        
+        <script src="https://www.google.com/recaptcha/api.js?hl=mn&onload=vueRecaptchaApiLoaded&render=explicit" async defer></script>
+        
     </head>
 
     <body class="left-nav-sidebar">
@@ -427,13 +429,7 @@
                     <!-- end social media -->
                 </div>
             </div>
-
-            <!-- <div id="app">
-                <div class="container">
-                    <example-component></example-component>
-                </div>
-                
-            </div> -->
+            
         </footer>
         <!-- end footer -->
 
