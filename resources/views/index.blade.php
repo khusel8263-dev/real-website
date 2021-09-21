@@ -50,6 +50,17 @@
             <script src="js/html5shiv.js"></script>
         <![endif]-->        
         <script src="https://www.google.com/recaptcha/api.js?hl=mn&onload=vueRecaptchaApiLoaded&render=explicit" async defer></script>        
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-GMXWVRTTC0"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-GMXWVRTTC0');
+        </script>
+
     </head>
 
     <body class="left-nav-sidebar">
