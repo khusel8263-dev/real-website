@@ -1,514 +1,368 @@
 <!doctype html>
 <html class="no-js" lang="en">
-    <head>
-        <!-- title -->
-        <title>АШИД СОФТ – Програм хангамж бүтээгч</title>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1" />
-        <meta name="author" content="ThemeZaa">
-        <!-- description -->
-        <meta name="description" content="Ашид Софт ХХК - Програм хангамжийн компани.">
-        <!-- keywords -->
-        <meta name="keywords" content="Ашид Софт ХХК, Ashid Soft LLC, програм хангамж, software, Ashid Dental, Шүдний эмнэлгийн програм, Ashid ERP, вэб сайт">
-        
-        <meta name="csrf-token" content="{{ csrf_token() }}">
-        <!-- favicon -->
-        <link rel="shortcut icon" href="images/favicon.png">
-        <link rel="apple-touch-icon" href="images/apple-touch-icon-57x57.png">
-        <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
-        <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
-        <!-- animation -->
-        <link rel="stylesheet" href="css/animate.css" />
-        <!-- bootstrap -->
-        <link rel="stylesheet" href="css/bootstrap.min.css" />
-        <!-- et line icon --> 
-        <link rel="stylesheet" href="css/et-line-icons.css" />
-        <!-- font-awesome icon -->
-        <link rel="stylesheet" href="css/font-awesome.min.css" />
-        <!-- themify icon -->
-        <link rel="stylesheet" href="css/themify-icons.css">
-        <!-- swiper carousel -->
-        <link rel="stylesheet" href="css/swiper.min.css">
-        <!-- justified gallery -->
-        <link rel="stylesheet" href="css/justified-gallery.min.css">
-        <!-- magnific popup -->
-        <link rel="stylesheet" href="css/magnific-popup.css" />
-        <!-- revolution slider -->
-        <link rel="stylesheet" type="text/css" href="revolution/css/settings.css" media="screen" />
-        <link rel="stylesheet" type="text/css" href="revolution/css/layers.css">
-        <link rel="stylesheet" type="text/css" href="revolution/css/navigation.css">
-        <!-- bootsnav -->
-        <link rel="stylesheet" href="css/bootsnav.css">
-        <!-- style -->
-        <link rel="stylesheet" href="css/style.css" />
-        <!-- responsive css -->
-        <link rel="stylesheet" href="css/responsive.css" />
-        <!-- style -->
-        <link rel="stylesheet" href="css/custom-style.css" />
-        <!--[if IE]>
-            <script src="js/html5shiv.js"></script>
-        <![endif]-->        
-        <script src="https://www.google.com/recaptcha/api.js?hl=mn&onload=vueRecaptchaApiLoaded&render=explicit" async defer></script>        
 
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-GMXWVRTTC0"></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
+<head>
+    <title>АШИД СОФТ – Програм хангамж бүтээгч</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1" />
+    <meta name="description" content="Ашид софт ХХК - Програм хангамжийн компани.">
+    <meta name="keywords"
+        content="Ашид софт ХХК, Ashid Soft LLC, програм хангамж, software, Ashid Dental, Ashid ERP, веб сайт">
+    <meta name="theme-color" content="#FFFFFF">
+    <link rel="shortcut icon" href="images/image copy 3.png">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+     <link rel="stylesheet" href="{{asset('css/animate.css')}}" />
+    <link rel="stylesheet" href="{{asset('css/bootstrap.min.css')}}" />
+    <link rel="stylesheet" href="{{asset('css/et-line-icons.css')}}" />
+    <link rel="stylesheet" href="{{asset('css/font-awesome.min.css')}}" />
+    <link rel="stylesheet" href="{{asset('css/themify-icons.css')}}"/>
+    <link rel="stylesheet" href="{{asset('css/swiper.min.css')}}"/>
+    <link rel="stylesheet" href="{{asset('css/justified-gallery.min.css')}}">
+    <link rel="stylesheet" href="{{asset('css/magnific-popup.css')}}" />
+    <link rel="stylesheet" href="{{asset('css/settings.css')}}" media="screen" />
+    <link rel="stylesheet" href="{{asset('css/layers.css')}}"/>
+    <link rel="stylesheet" href="{{asset('css/navigation.css')}}"/>
+    <link rel="stylesheet" href="{{asset('css/bootsnav.css')}}"/>
+    <link rel="stylesheet" href="{{asset('css/style.css')}}" />
+    <link rel="stylesheet" href="{{asset('css/responsive.css')}}" />
+    <script src="https://kit.fontawesome.com/70cd87d56f.js" crossorigin="anonymous"></script>
+</head>
 
-            gtag('config', 'G-GMXWVRTTC0');
-        </script>
-
-    </head>
-
-    <body class="left-nav-sidebar">
-        <header>                
-            <div class="left-nav">
-                <!-- start logo -->
-                <div class="sidebar-part1">
-                    <a href="/" title="Ashid Soft LLC" class="logo"><img src="images/logo-ashid-soft.png" data-rjs="images/logo-ashid-soft@2x.png" alt="Ashid Soft LLC"></a> 
+<body>
+    <header>
+        <nav
+            class="navbar navbar-default bootsnav background-white header-light-transparent navbar-banner navbar-expand-lg">
+            <div class="container-fluid nav-header-container">
+                <div class="brand-logo"><a href="#home" title="Ashid Soft LLC" class="logo"><img
+                            src="images/image copy.png" alt="Ashid Soft LLC"></a></div>
+                <button type="button" class="navbar-toggler" aria-label="toggle navigation"
+                    data-target="#navbar-collapse-toggle-1"><span></span><span></span><span></span></button>
+                <div class="navbar-collapse" id="navbar-collapse-toggle-1">
+                    <ul id="accordion" class="nav navbar-nav alt-font text-normal">
+                        <li><a href="#home" class="inner-link">эхлэл</a></li>
+                        <li><a href="#about" class="inner-link">тухай</a></li>
+                        <li><a href="#services" class="inner-link">үйлчилгээ</a></li>
+                        <li><a href="#web-developement" class="inner-link">веб хөгжүүлэлт </a></li>
+                        <li><a href="#contact" class="inner-link">холбогдох</a></li>
+                    </ul>
                 </div>
-                <!-- end logo -->
-                <div class="sidebar-part2">  
-                    <div class="sidebar-middle">
-                        <div class="sidebar-middle-menu alt-font font-weight-600">
-                            <nav class="navbar bootsnav navbar-expand-lg alt-font main-nav">  
-                                <div id="navbar-menu" class="collapse navbar-collapse no-padding">
-                                    <ul class="nav navbar-nav margin-80px-bottom">
-                                        <li class="dropdown">
-                                            <a href="" title="Home" data-toggle="dropdown" class="main-nav">Эхлэл
-                                                <!-- <i class="fas fa-angle-right pull-right"></i> -->
-                                            </a>
-                                            <!-- <ul class="dropdown-menu second-level">
-                                                <li class="dropdown">
-                                                    <a href="#" title="Home" data-toggle="dropdown">Classic <i class="fas fa-angle-right"></i></a>
-                                                    <ul class="dropdown-menu third-level">
-                                                        <li><a href="home-classic-corporate.html">Classic corporate</a></li>
-                                                        <li><a href="home-classic-digital-agency.html">Classic digital agency</a></li>
-                                                        <li><a href="home-classic-innovation-agency.html">Classic innovation agency</a></li>
-                                                        <li><a href="home-classic-web-agency.html">Classic web agency</a></li>
-                                                        <li><a href="home-classic-one-page.html">Classic one page</a></li>
-                                                        <li><a href="home-classic-start-up.html">Classic start-up</a></li>
-                                                        <li><a href="home-classic-interactive-agency.html">Classic interactive agency</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li class="dropdown">
-                                                    <a href="#" title="Home" data-toggle="dropdown">Creative <i class="fas fa-angle-right"></i></a>
-                                                    <ul class="dropdown-menu third-level">
-                                                        <li><a href="home-creative-studio.html">Creative studio</a></li>
-                                                        <li><a href="home-creative-business.html">Creative business</a></li>
-                                                        <li><a href="home-creative-simple-portfolio.html">Creative simple portfolio</a></li>
-                                                        <li><a href="home-creative-branding-agency.html">Creative branding agency</a></li>
-                                                        <li class="menu-new"><a href="home-creative-minimalist-portfolio.html">creative minimalist portfolio</a></li>
-                                                        <li><a href="home-creative-small-business.html">Creative small business</a></li>
-                                                        <li><a href="home-creative-designer.html">Creative designer</a></li>
-                                                        <li><a href="home-creative-agency.html">Creative agency</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li class="dropdown">
-                                                    <a href="#" title="Home" data-toggle="dropdown">Portfolio <i class="fas fa-angle-right"></i></a>
-                                                    <ul class="dropdown-menu third-level">
-                                                        <li><a href="home-portfolio-minimal.html">Portfolio minimal</a></li>
-                                                        <li><a href="home-portfolio-multiple-carousel.html">Portfolio multiple carousel</a></li>
-                                                        <li><a href="home-portfolio-centered-slides.html">Portfolio centered slides</a></li>
-                                                        <li><a href="home-portfolio-personal.html">Portfolio personal</a></li>
-                                                        <li><a href="home-portfolio-metro.html">Portfolio metro</a></li>
-                                                        <li><a href="home-portfolio-full-screen-vertical.html">Portfolio full screen – vertical</a></li>
-                                                        <li><a href="home-portfolio-photographer.html">Portfolio photographer</a></li>
-                                                        <li><a href="home-portfolio-parallax.html">Portfolio parallax</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li class="dropdown">
-                                                    <a href="#" title="Home" data-toggle="dropdown">Blog <i class="fas fa-angle-right"></i></a>
-                                                    <ul class="dropdown-menu third-level">
-                                                        <li><a href="home-blog-grid.html">Blog grid</a></li>
-                                                        <li><a href="home-blog-masonry.html">Blog masonry</a></li>
-                                                        <li><a href="home-blog-clean.html">Blog clean</a></li>
-                                                        <li><a href="home-blog-personal.html">Blog personal</a></li>
-                                                    </ul>
-                                                </li>
-                                            </ul> -->
-                                        </li>
-                                        
-                                        <li class="dropdown">
-                                            <a data-toggle="dropdown" href="#" title="Portfolio" class="main-nav ">Бүтээгдэхүүн <i class="fas fa-angle-right"></i></a>
-                                            <ul class="dropdown-menu second-level">
-                                                <li class="dropdown">
-                                                    <a href="#" title="Grid - Full width Layouts" data-toggle="dropdown">Ashid Dental 
-                                                        <!-- <i class="fas fa-angle-right"></i> -->
-                                                    </a>
-                                                    <!-- <ul class="dropdown-menu third-level">
-                                                        <li><a href="portfolio-full-width-grid-overlay.html">Portfolio grid overlay</a></li>
-                                                        <li><a href="portfolio-full-width-grid-with-icon.html">Portfolio grid with icon</a></li>
-                                                        <li><a href="portfolio-full-width-grid-transform.html">Portfolio grid transform</a></li>
-                                                        <li><a href="portfolio-full-width-grid-zooming.html">Portfolio grid zooming</a></li>
-                                                    </ul> -->
-                                                </li>
-                                                <li class="dropdown">
-                                                    <a href="#" title="Masonry  - Full width Layouts" data-toggle="dropdown">Ashid ERP
-                                                        <!-- <i class="fas fa-angle-right"></i> -->
-                                                    </a>
-                                                    <!-- <ul class="dropdown-menu third-level">
-                                                        <li><a href="portfolio-full-width-masonry-overlay.html">Portfolio masonry overlay</a></li>
-                                                        <li><a href="portfolio-full-width-masonry-with-icon.html">Portfolio masonry with icon</a></li>
-                                                    </ul> -->
-                                                </li>
-                                                <li class="dropdown">
-                                                    <a href="#webdev" title="Metro - Full width Layouts" data-toggle="dropdown" class="inner-link">Web development 
-                                                        <!-- <i class="fas fa-angle-right"></i> -->
-                                                    </a>
-                                                    <!-- <ul class="dropdown-menu third-level">
-                                                        <li><a href="portfolio-full-width-metro-overlay.html">Portfolio metro overlay</a></li>
-                                                        <li><a href="portfolio-full-width-metro-with-icon.html">Portfolio metro with icon</a></li>
-                                                        <li><a href="portfolio-full-width-metro-transform.html">Portfolio metro transform</a></li>
-                                                        <li><a href="portfolio-full-width-metro-zooming.html">Portfolio metro zooming</a></li>
-                                                    </ul> -->
-                                                </li>
-                                                <!-- <li class="dropdown">
-                                                    <a href="#" title="Other - Full width Layouts" data-toggle="dropdown">Other - Full Width Layouts <i class="fas fa-angle-right"></i></a>
-                                                    <ul class="dropdown-menu third-level">
-                                                        <li><a href="portfolio-full-width-image-gallery.html">Portfolio image gallery</a></li>
-                                                        <li><a href="portfolio-full-width-justified-gallery.html">Portfolio justified</a></li>
-                                                        <li><a href="portfolio-full-width-carousel.html">Portfolio carousel</a></li>
-                                                        <li><a href="portfolio-full-width-parallax.html">Portfolio parallax</a></li>
-                                                    </ul>
-                                                </li> -->
-                                                <!-- <li class="dropdown">
-                                                    <a href="#" title="Grid - Boxed Layouts" data-toggle="dropdown">Grid - Boxed Layouts <i class="fas fa-angle-right"></i></a>
-                                                    <ul class="dropdown-menu third-level">
-                                                        <li><a href="portfolio-boxed-grid-overlay.html">Portfolio grid overlay</a></li>
-                                                        <li><a href="portfolio-boxed-grid-with-icon.html">Portfolio grid with icon</a></li>
-                                                        <li><a href="portfolio-boxed-grid-transform.html">Portfolio grid transform</a></li>
-                                                        <li><a href="portfolio-boxed-grid-zooming.html">Portfolio grid zooming</a></li>
-                                                    </ul>
-                                                </li> -->
-                                                <!-- <li class="dropdown">
-                                                    <a href="#" title="Masonry - Boxed Layouts" data-toggle="dropdown">Masonry - Boxed Layouts <i class="fas fa-angle-right"></i></a>
-                                                    <ul class="dropdown-menu third-level">
-                                                        <li><a href="portfolio-boxed-masonry-overlay.html">Portfolio masonry overlay</a></li>
-                                                        <li><a href="portfolio-boxed-masonry-with-icon.html">Portfolio masonry with icon</a></li>
-                                                    </ul>
-                                                </li> -->
-                                                <!-- <li class="dropdown">
-                                                    <a href="#" title="Metro - Boxed Layouts" data-toggle="dropdown">Metro - Boxed Layouts <i class="fas fa-angle-right"></i></a>
-                                                    <ul class="dropdown-menu third-level">
-                                                        <li><a href="portfolio-boxed-metro-overlay.html">Portfolio metro overlay</a></li>
-                                                        <li><a href="portfolio-boxed-metro-with-icon.html">Portfolio metro with icon</a></li>
-                                                        <li><a href="portfolio-boxed-metro-transform.html">Portfolio metro transform</a></li>
-                                                        <li><a href="portfolio-boxed-metro-zooming.html">Portfolio metro zooming</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li class="dropdown">
-                                                    <a href="#" title="Other - Boxed Layouts" data-toggle="dropdown">Other - Boxed Layouts <i class="fas fa-angle-right"></i></a>
-                                                    <ul class="dropdown-menu third-level">
-                                                        <li><a href="portfolio-boxed-image-gallery.html">Portfolio image gallery</a></li>
-                                                        <li><a href="portfolio-boxed-justified-gallery.html">Portfolio justified</a></li>
-                                                        <li><a href="portfolio-boxed-carousel.html">Portfolio carousel</a></li>
-                                                        <li><a href="portfolio-boxed-parallax.html">Portfolio parallax</a></li>
-                                                    </ul>
-                                                </li> -->
-                                                <!-- <li class="dropdown">
-                                                    <a href="#" title="Single Project Page" data-toggle="dropdown">Single Project Page <i class="fas fa-angle-right"></i></a>
-                                                    <ul class="dropdown-menu third-level">
-                                                        <li><a href="single-project-page-01.html">Single project page 01</a></li>
-                                                        <li><a href="single-project-page-02.html">Single project page 02</a></li>
-                                                        <li><a href="single-project-page-03.html">Single project page 03</a></li>
-                                                        <li><a href="single-project-page-04.html">Single project page 04</a></li>
-                                                        <li><a href="single-project-page-05.html">Single project page 05</a></li>
-                                                        <li><a href="single-project-page-06.html">Single project page 06</a></li>
-                                                        <li><a href="single-project-page-07.html">Single project page 07</a></li>
-                                                        <li><a href="single-project-page-08.html">Single project page 08</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li class="dropdown">
-                                                    <a href="#" title="Portfolio Columns" data-toggle="dropdown">Portfolio Columns <i class="fas fa-angle-right"></i></a>
-                                                    <ul class="dropdown-menu third-level">
-                                                        <li><a href="portfolio-two-columns.html">Portfolio 2 columns</a></li>
-                                                        <li><a href="portfolio-three-columns.html">Portfolio 3 columns</a></li>
-                                                        <li><a href="portfolio-four-columns.html">Portfolio 4 columns</a></li>
-                                                        <li><a href="portfolio-five-columns.html">Portfolio 5 columns</a></li>
-                                                    </ul>
-                                                </li> -->
-                                            </ul>
-                                        </li>
-                                        
-                                        <!-- <li class="dropdown">
-                                            <a data-toggle="dropdown" href="#" title="Contact">Elements <i class="fas fa-angle-right"></i></a>
-                                            <ul class="dropdown-menu second-level">
-                                                <li class="dropdown">
-                                                    <a href="#" title="General elements" data-toggle="dropdown">General Elements <i class="fas fa-angle-right"></i></a>
-                                                    <ul class="dropdown-menu third-level">
-                                                        <li><a href="accordions.html"><i class="ti-layout-accordion-separated"></i> Accordions</a></li>
-                                                        <li><a href="buttons.html"><i class="ti-mouse"></i> Buttons</a></li>
-                                                        <li><a href="team.html"><i class="ti-user"></i> Team</a></li>
-                                                        <li><a href="team-carousel.html"><i class="ti-layout-slider-alt"></i> Team carousel</a></li>
-                                                        <li><a href="clients.html"><i class="ti-id-badge"></i> Clients</a></li>
-                                                        <li><a href="client-carousel.html"><i class="ti-layout-slider"></i> Client carousel</a></li>
-                                                        <li><a href="subscribe.html"><i class="ti-bookmark"></i> Subscribe</a></li>
-                                                        <li><a href="call-to-action.html"><i class="ti-headphone-alt"></i> Call to action</a></li>
-                                                        <li><a href="tab.html"><i class="ti-layout-tab"></i> Tab</a></li>
-                                                        <li><a href="google-map.html"><i class="ti-location-pin"></i> Google map</a></li>
-                                                        <li><a href="text-slider.html"><i class="ti-layout-media-overlay"></i> Text slider</a></li>
-                                                        <li><a href="contact-form.html"><i class="ti-clipboard"></i> Contact form</a></li>
-                                                        <li><a href="image-gallery.html"><i class="ti-gallery"></i> Image gallery</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li class="dropdown">
-                                                    <a href="#" title="Infographics / icons" data-toggle="dropdown">Infographics / Icons <i class="fas fa-angle-right"></i></a>
-                                                    <ul class="dropdown-menu third-level">
-                                                        <li><a href="process-bar.html"><i class="icon-hourglass"></i> Process bar</a></li>
-                                                        <li><a href="icon-with-text.html"><i class="ti-layout-media-left"></i> Icon with text</a></li>
-                                                        <li><a href="overline-icon-box.html"><i class="ti-layout-placeholder"></i> Overline icon box</a></li>
-                                                        <li><a href="custom-icon-with-text.html"><i class="ti-layout-cta-btn-left"></i> Custom icon with text</a></li>
-                                                        <li><a href="counters.html"><i class="ti-timer"></i> Counters</a></li>
-                                                        <li><a href="countdown.html"><i class="ti-alarm-clock"></i> Countdown</a></li>
-                                                        <li><a href="pie-charts.html"><i class="ti-pie-chart"></i> Pie charts</a></li>
-                                                        <li><a href="text-box.html"><i class="ti-layout-cta-left"></i> Text box</a></li>
-                                                        <li><a href="fancy-text-box.html"><i class="ti-layout-cta-center"></i> Fancy text box</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li class="dropdown">
-                                                    <a href="#" title="Interactive Elements" data-toggle="dropdown">Interactive Elements <i class="fas fa-angle-right"></i></a>
-                                                    <ul class="dropdown-menu third-level">
-                                                        <li><a href="testimonials.html"><i class="ti-thought"></i> Testimonials</a></li>
-                                                        <li><a href="testimonials-carousel.html"><i class="ti-comments"></i> Testimonials carousel</a></li>
-                                                        <li><a href="video.html"><i class="ti-video-camera"></i> Video</a></li>
-                                                        <li><a href="interactive-banners.html"><i class="ti-image"></i> Interactive banners</a></li>
-                                                        <li><a href="services.html"><i class="ti-headphone-alt"></i> Services</a></li>
-                                                        <li><a href="portfolio-slider.html"><i class="ti-layout-slider-alt"></i> Portfolio slider</a></li>
-                                                        <li><a href="info-banner.html"><i class="ti-layout-slider"></i> Info banner</a></li>
-                                                        <li><a href="rotate-box.html"><i class="ti-layout-width-full"></i> Rotate box</a></li>
-                                                        <li><a href="process-step.html"><i class="ti-stats-up"></i> Process step</a></li>
-                                                        <li><a href="blog-posts.html"><i class="ti-comment-alt"></i> Blog posts</a></li>
-                                                        <li><a href="instagram.html"><i class="ti-instagram"></i> Instagram</a></li>
-                                                        <li><a href="parallax-scrolling.html"><i class="ti-exchange-vertical"></i> Parallax scrolling</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li class="dropdown">
-                                                    <a href="#" title="Text & containers" data-toggle="dropdown">Text & Containers <i class="fas fa-angle-right"></i></a>
-                                                    <ul class="dropdown-menu third-level">
-                                                        <li><a href="heading.html"><i class="ti-text"></i> Heading</a></li>
-                                                        <li><a href="dropcaps.html"><i class="ti-layout-accordion-list"></i> Dropcaps</a></li>
-                                                        <li><a href="columns.html"><i class="ti-layout-column3-alt"></i> Columns</a></li>
-                                                        <li><a href="blockquote.html"><i class="ti-quote-left"></i> Blockquote</a></li>
-                                                        <li><a href="highlights.html"><i class="ti-underline"></i> Highlights</a></li>
-                                                        <li><a href="message-box.html"><i class="ti-layout-media-right-alt"></i> Message box</a></li>
-                                                        <li><a href="social-icons.html"><i class="ti-signal"></i> Social icons</a></li>
-                                                        <li><a href="lists.html"><i class="ti-list"></i> Lists</a></li>
-                                                        <li><a href="seperators.html"><i class="ti-layout-line-solid"></i> Separators</a></li>
-                                                        <li><a href="pricing-table.html"><i class="ti-layout-grid2-thumb"></i> Pricing table</a></li>
-                                                    </ul>
-                                                </li>
-                                            </ul>
-                                        </li> -->
-                                        <!-- <li class="dropdown">
-                                            <a data-toggle="dropdown" href="#" title="Features">Features <i class="fas fa-angle-right"></i></a>
-                                            <ul class="dropdown-menu second-level">
-                                                <li class="dropdown">
-                                                    <a href="#" title="Header Styles" data-toggle="dropdown">Header Styles <i class="fas fa-angle-right"></i></a>
-                                                    <ul class="dropdown-menu third-level">
-                                                        <li><a href="transparent-header.html">Transparent header</a></li>
-                                                        <li><a href="white-header.html">White header</a></li>
-                                                        <li><a href="dark-header.html">Dark header</a></li>
-                                                        <li><a href="header-with-top-bar.html">Header with top bar</a></li>
-                                                        <li><a href="header-with-sticky-top-bar.html">Header with sticky top bar</a></li>
-                                                        <li><a href="header-with-push.html">Header with push</a></li>
-                                                        <li><a href="center-navigation.html">Center navigation</a></li>
-                                                        <li><a href="center-logo.html">Center logo</a></li>
-                                                        <li><a href="top-logo.html">Top logo</a></li>
-                                                        <li><a href="one-page-navigation.html">One page navigation</a></li>
-                                                        <li><a href="hamburger-menu.html">Hamburger menu</a></li>
-                                                        <li><a href="hamburger-menu-modern.html">Hamburger menu modern</a></li>
-                                                        <li><a href="hamburger-menu-half.html">Hamburger menu half</a></li>
-                                                        <li><a href="left-menu-classic.html">Left menu classic</a></li>
-                                                        <li><a href="left-menu-modern.html">Left menu modern</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li class="dropdown">
-                                                    <a href="#" title="Footer" data-toggle="dropdown">Footer <i class="fas fa-angle-right"></i></a>
-                                                    <ul class="dropdown-menu third-level">
-                                                        <li><a href="footer-standard.html">Footer standard</a></li>
-                                                        <li><a href="footer-standard-dark.html">Footer standard dark</a></li>
-                                                        <li><a href="footer-classic.html">Footer classic</a></li>
-                                                        <li><a href="footer-classic-dark.html">Footer classic dark</a></li>
-                                                        <li><a href="footer-clean.html">Footer clean</a></li>
-                                                        <li><a href="footer-clean-dark.html">Footer clean dark</a></li>
-                                                        <li><a href="footer-modern.html">Footer modern</a></li>
-                                                        <li><a href="footer-modern-dark.html">Footer modern dark</a></li>
-                                                        <li><a href="footer-center-logo.html">Footer center logo </a></li>
-                                                        <li><a href="footer-center-logo-dark.html">Footer center logo dark</a></li>
-                                                        <li><a href="footer-strip.html">Footer strip</a></li>
-                                                        <li><a href="footer-strip-dark.html">Footer strip dark</a></li>
-                                                        <li><a href="footer-center-logo-02.html">Footer center logo 02</a></li>
-                                                        <li><a href="footer-center-logo-02-dark.html">Footer center logo 02 dark</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li class="dropdown">
-                                                    <a href="#" title="Page Title" data-toggle="dropdown">Page Title <i class="fas fa-angle-right"></i></a>
-                                                    <ul class="dropdown-menu third-level">
-                                                        <li><a href="page-title-left-alignment.html">Left alignment</a></li>
-                                                        <li><a href="page-title-right-alignment.html">Right alignment</a></li>
-                                                        <li><a href="page-title-center-alignment.html">Center alignment</a></li>
-                                                        <li><a href="page-title-dark-style.html">Dark style</a></li>
-                                                        <li><a href="page-title-big-typography.html">Big typography</a></li>
-                                                        <li><a href="page-title-parallax-image-background.html">Parallax image background</a></li>
-                                                        <li><a href="page-title-background-breadcrumbs.html">Image after breadcrumbs</a></li>
-                                                        <li><a href="page-title-gallery-background.html">Gallery background</a></li>
-                                                        <li><a href="page-title-background-video.html">Background video</a></li>
-                                                        <li><a href="page-title-mini-version.html">Mini version</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li class="dropdown">
-                                                    <a href="#" title="Single image lightbox" data-toggle="dropdown">Single Image Lightbox <i class="fas fa-angle-right"></i></a>
-                                                    <ul class="dropdown-menu third-level">
-                                                        <li><a href="lightbox-gallery.html">Lightbox gallery</a></li>
-                                                        <li><a href="zoom-gallery.html">Zoom gallery</a></li>
-                                                        <li class="menu-new"><a href="metro-gallery.html">metro gallery</a></li>
-                                                        <li class="menu-new"><a href="justified-gallery.html">justified gallery</a></li>
-                                                        <li><a href="popup-with-form.html">Popup with form</a></li>
-                                                        <li><a href="modal-popup.html">Modal popup</a></li>
-                                                        <li><a href="open-youtube-video.html">Open youtube video</a></li>
-                                                        <li><a href="open-vimeo-video.html">Open vimeo video</a></li>
-                                                        <li><a href="open-google-map.html">Open google map</a></li>
-                                                    </ul>
-                                                </li>
-                                            </ul>
-                                        </li> -->
-                                        <li>
-                                            <div class="side-left-menu-close close-side"></div>
-                                        </li>
-                                    </ul>
-                                </div>  
-                            </nav>
-                            <div class="icon-social-medium sm-display-none">
-                                <a href="https://www.facebook.com/ashidsoft/" target="_blank" class="text-extra-dark-gray text-deep-pink-hover margin-10px-right"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
-                                <a href="https://twitter.com/" target="_blank" class="text-extra-dark-gray text-deep-pink-hover margin-10px-right"><i class="fab fa-twitter" aria-hidden="true"></i></a>
-                                <a class="instagram text-black" href="https://instagram.com/" target="_blank"><i class="fab fa-instagram mr-0" aria-hidden="true"></i></a>
-                                <!-- <a href="https://dribbble.com/" target="_blank" class="text-extra-dark-gray text-deep-pink-hover margin-10px-right"><i class="fab fa-dribbble" aria-hidden="true"></i></a>
-                                <a href="https://plus.google.com" target="_blank" class="text-extra-dark-gray text-deep-pink-hover margin-10px-right"><i class="fab fa-google-plus-g" aria-hidden="true"></i></a>
-                                <a href="#" target="_blank" class="text-extra-dark-gray text-deep-pink-hover"><i class="fab fa-tumblr" aria-hidden="true"></i></a> -->
+                <div class="header-actions">
+                    <a href="#search-header" class="header-search-form">
+                        <i class="fa-solid fa-magnifying-glass fa-bounce fa-xl" style="color: rgb(215, 115, 29);"></i>
+                    </a>
+                    <a href="https://www.facebook.com/ashidsoft" target="_blank">
+                        <i class="fa-brands fa-facebook fa-bounce fa-xl" style="color: rgb(215, 115, 29);"></i>
+                    </a>
+                    <a href="https://instagram.com/ashidsoft" target="_blank">
+                        <i class="fa-brands fa-instagram fa-bounce fa-xl" style="color: rgb(215, 115, 29);"></i>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section id="home" class="wow fadeIn p-0 parallax sm-background-image-center hero-section"
+        style="background-image:url('images/image copy 4.png');">
+        <div class="opacity-extra-medium bg-black"></div>
+        <div class="container-fluid padding-thirteen-lr full-screen sm-padding-15px-lr">
+            <div class="row">
+                <div class="slider-typography">
+                    <div class="slider-text-middle-main">
+                        <div class="slider-text-middle">
+                            <div class="col-12 text-center">
+                                <h2
+                                    class="text-white-2 alt-font font-weight-300 width-40 lg-width-60 mx-auto md-width-70 sm-width-100 mb-0">
+                                    ASHID DENTAL <br> шүдний эмнэлэгийн программ</h2>
                             </div>
-                            <div class="right-bg"><img src="images/digital-text-new.png" alt="Pofo"></div>
                         </div>
+                        <div class="down-section text-center"><a href="#about" class="inner-link"><i
+                                    class="ti-arrow-down icon-medium text-deep-pink"></i></a></div>
                     </div>
-                </div>
-                <div class="sidebar-part3">
-                    <div class="bottom-menu-icon">
-                        <a href="#contact" class="text-extra-dark-gray nav-icon" >
-                            <!-- <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span> -->
-                            <i class="icon-map-pin icon-medium" style="vertical-align: middle;"></i>                            
-                        </a>
-                    </div> 
                 </div>
             </div>
-        </header>
+        </div>
+    </section>
 
-        @yield('content')
+    <section class="wow fadeIn" id="about">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-12 col-lg-4 md-margin-30px-bottom text-center text-lg-left wow fadeIn">
+                    <h2 class="alt-font font-weight-700 text-extra-dark-gray text-uppercase">Ashid Dental шүдний
+                        эмнэлгийн програм.</h2>
+                    <div class="separator-line-verticle-extra-small bg-extra-dark-gray width-50 margin-30px-bottom">
+                    </div>
+                    <p>Ашид Дентал шүдний эмнэлгийн програм нь шүдний эмнэлгийн бүхий л үйл ажиллагааг системд оруулж,
+                        зөв, цэгцтэй явуулах боломжийг хангаж өгсөн цогц програм юм. Үүнээс гадна хэрэглэхэд хялбар,
+                        ойлгомжтойн дээр програмыг өөрсдийн хэрэглээнд нийцүүлэн тохируулах бүрэн боломжтой.</p><a
+                        class="btn btn-small btn-dark-gray font-weight-700"></a>
+            </div>
 
-        <!-- start footer --> 
-        <footer class="footer-center-logo padding-five-tb sm-padding-30px-tb">
-            <div class="container">
-                <div class="row align-items-center">
-                    <!-- start copyright -->
-                    <div class="col-lg-4 col-md-5 text-small text-center alt-font sm-margin-15px-bottom">
-                        &COPY; 2020 Ашид Софт ХХК.
-                    </div>
-                    <!-- end copyright -->
-                    <!-- start logo -->
-                    <div class="col-lg-4 col-md-2 text-center sm-margin-10px-bottom">
-                        <!-- <a href="index.html"><img class="footer-logo" src="images/logo.png" data-rjs="images/logo@2x.png" alt="Pofo"></a> -->
-                    </div>
-                    <!-- end logo -->
-                    <!-- start social media -->
-                    <div class="col-lg-4 col-md-5 text-center">
-                        <span class="alt-font text-small margin-20px-right">Сошиал сүлжээнд</span>
-                        <div class="social-icon-style-8 d-inline-block vertical-align-middle">
-                            <ul class="small-icon mb-0">
-                                <li><a class="facebook text-black" href="https://www.facebook.com/ashidsoft/" target="_blank"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
-                                <li><a class="twitter text-black" href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a></li>
-                                <!-- <li><a class="google text-black" href="https://plus.google.com" target="_blank"><i class="fab fa-google-plus-g"></i></a></li> -->
-                                <li><a class="instagram text-black" href="https://instagram.com/" target="_blank"><i class="fab fa-instagram mr-0" aria-hidden="true"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <!-- end social media -->
+            <div class="col-12 col-lg-8 col-md-8 sm-margin-15px-bottom wow fadeIn">
+                <img src="images/image copy 22.png" class="about-img">
+            </div>
+        </div>
+    </div>
+</section>
+
+
+  <section class="workflow-timeline-section" id="services">
+  <div class="workflow-timeline-container">
+    <ol class="workflow-timeline-list">
+      <li class="workflow-timeline-step">
+        <span class="workflow-timeline-step-number">01</span>
+
+        <div class="workflow-timeline-card">
+          <h3 class="workflow-timeline-step-title">Өвчтөн бүртгэх</h3>
+          <p class="workflow-timeline-step-desc">
+            Өвчтөний ерөнхий мэдээллийг бүртгэж, хайлт хийх үйл ажиллагааг хялбар болгоно.
+          </p>
+        </div>
+      </li>
+
+      <li class="workflow-timeline-step">
+        <span class="workflow-timeline-step-number">02</span>
+
+        <div class="workflow-timeline-card">
+          <h3 class="workflow-timeline-step-title">Цаг товлох</h3>
+          <p class="workflow-timeline-step-desc">
+            Эмч нарын ажиллах цагийн хуваарийн дагуу цаг авалтыг цэгцтэй удирдана.
+          </p>
+        </div>
+      </li>
+
+      <li class="workflow-timeline-step">
+        <span class="workflow-timeline-step-number">03</span>
+
+        <div class="workflow-timeline-card">
+          <h3 class="workflow-timeline-step-title">Эмчилгээний түүх</h3>
+          <p class="workflow-timeline-step-desc">
+            Өвчтөнд хийгдсэн эмчилгээний мэдээлэл бүртгэх, эмчилгээний төлөвлөгөө үүсгэх.
+          </p>
+        </div>
+      </li>
+      <li class="workflow-timeline-step">
+        <span class="workflow-timeline-step-number">04</span>
+
+        <div class="workflow-timeline-card">
+          <h3 class="workflow-timeline-step-title">Төлбөр тооцоо</h3>
+          <p class="workflow-timeline-step-desc">
+            Өвчтөнд хийгдсэн эмчилгээний дагуу төлбөр төлөх, НӨАТ сугалаатай болон энгийн баримт хэвлэх.
+          </p>
+        </div>
+      </li>
+
+      <li class="workflow-timeline-step">
+        <span class="workflow-timeline-step-number">05</span>
+
+        <div class="workflow-timeline-card">
+          <h3 class="workflow-timeline-step-title">Тайлан мэдээ</h3>
+          <p class="workflow-timeline-step-desc">
+            Эмчилгээ ба Орлого, Хөнгөлөлт, Төлбөр, Төлбөрийн үлдэгдлийн мэдээлэл зэрэг олон төрлийн тайлан гарна.
+          </p>
+        </div>
+      </li>
+
+      <li class="workflow-timeline-step">
+        <span class="workflow-timeline-step-number">06</span>
+
+        <div class="workflow-timeline-card">
+          <h3 class="workflow-timeline-step-title">Програмын тохиргоо</h3>
+          <p class="workflow-timeline-step-desc">
+            Эмчилгээ, онош, хэрэглэгчдийн эрхийн тохиргоо гэх мэт зөвхөн тухайн эмнэлэгт зориулж програмын тохируулах.
+          </p>
+        </div>
+      </li>
+    </ol>
+
+  </div>
+</section>
+
+    <section class="wow fadeIn">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-12 col-lg-6 wow fadeInLeft"><img src="images/image copy 6.png" class="width-100"
+                        alt="Showcase" /></div>
+                <div class="col-12 col-xl-5 col-lg-6 offset-xl-1 wow fadeInRight">
+                    <h3 class="alt-font text-extra-dark-gray font-weight-600 margin-30px-bottom">Программын давуу тал,
+                        боломжууд:</h3>
+                    <ul class="no-padding list-style-4">
+                        <li>Зөвхөн шүдний эмнэлгүүд болон шүдний эмч нарт зориулсан тусгай функцүүдтэй.</li>
+                        <li>Өвчтөний ерөнхий мэдээлэл болон эмчилгээний түүх, төлбөрийн түүх зэрэг бүрэн мэдээлэл
+                            програмд орсноор танай байгууллагын мэдээллийн сан үүснэ.</li>
+                        <li>Цаг авалтын функцыг ашигласнаар цаг авалттай холбоотой үйл ажиллагаа маш шуурхай бөгөөд
+                            цэгцтэй явагдана.</li>
+                        <li>Эмч нар тухайн нэг өвчтөн бүр дээр эмчилгээний төлөвлөгөө зохиох, төлөвлөгөөний дагуу
+                            эмчилгээний мэдээлэл оруулснаар өвчтөний эмчилгээний түүх бүрэн хөтлөгдөж явна.</li>
+                        <li>Мөн тухайн өвчтөний шүдний хүснэгтэнд хийгдсэн эмчилгээний төрлөөс хамаарч будалт буюу
+                            график дүрслэл хийгдэнэ.</li>
+                        <li>НӨАТ -ын системтэй холбогдсон тул сугалааны дугаартай баримт хэвлэх боломжтой.</li>
+                        <li>Байгууллагын санхүүтэй холбоотой олон төрлийн тайлан мэдээлэл автоматаар гарна.</li>
+                    </ul><a href="#web-developement"
+                        class="btn btn-dark-gray btn-small text-extra-small border-radius-4 margin-20px-top">Ашид</a>
                 </div>
             </div>
-            
-        </footer>
-        <!-- end footer -->
+        </div>
+    </section>
 
-        <!-- start scroll to top -->
-        <a class="scroll-top-arrow" href="javascript:void(0);"><i class="ti-arrow-up"></i></a>
-        <!-- end scroll to top -->
-        <script type="text/javascript" src="{{ asset('js/app.js') }}"></script>
-        <!-- javascript libraries -->   
-        <script type="text/javascript" src="js/jquery.js"></script>        
-        <!-- <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script> -->        
-        <script type="text/javascript" src="js/modernizr.js"></script>
-        <script type="text/javascript" src="js/bootstrap.bundle.js"></script>
-        <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
-        <script type="text/javascript" src="js/skrollr.min.js"></script>
-        <script type="text/javascript" src="js/smooth-scroll.js"></script>
-        <!-- <script src="https://rawgit.com/kswedberg/jquery-smooth-scroll/master/jquery.smooth-scroll.js"></script> -->
-        <script type="text/javascript" src="js/jquery.appear.js"></script>
-        <!-- menu navigation -->
-        <script type="text/javascript" src="js/bootsnav.js"></script>
-        <script type="text/javascript" src="js/jquery.nav.js"></script>
-        <!-- animation -->
-        <script type="text/javascript" src="js/wow.min.js"></script>
-        <!-- page scroll -->
-        <script type="text/javascript" src="js/page-scroll.js"></script>
-        <!-- swiper carousel -->
-        <script type="text/javascript" src="js/swiper.min.js"></script>
-        <!-- counter -->
-        <script type="text/javascript" src="js/jquery.count-to.js"></script>
-        <!-- parallax -->
-        <script type="text/javascript" src="js/jquery.stellar.js"></script>
-        <!-- magnific popup -->
-        <script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
-        <!-- portfolio with shorting tab -->
-        <script type="text/javascript" src="js/isotope.pkgd.min.js"></script>
-        <!-- images loaded -->
-        <script type="text/javascript" src="js/imagesloaded.pkgd.min.js"></script>
-        <!-- pull menu -->
-        <script type="text/javascript" src="js/classie.js"></script>
-        <script type="text/javascript" src="js/hamburger-menu.js"></script>
-        <!-- counter -->
-        <script type="text/javascript" src="js/counter.js"></script>
-        <!-- fit video -->
-        <script type="text/javascript" src="js/jquery.fitvids.js"></script>
+    <section class="web-dev-section" id="web-developement">
+    <div class="container">
+        <div class="web-dev-layout">
 
-        <!-- skill bars -->
-        <script type="text/javascript" src="js/skill.bars.jquery.js"></script> 
-        <!-- justified gallery -->
-        <script type="text/javascript" src="js/justified-gallery.min.js"></script>
-        <!--pie chart-->
-        <script type="text/javascript" src="js/jquery.easypiechart.min.js"></script>
-        <!-- instagram -->
-        <script type="text/javascript" src="js/instafeed.min.js"></script>
-        <!-- retina -->
-        <script type="text/javascript" src="js/retina.min.js"></script>        
-        <!-- revolution -->
-        <script type="text/javascript" src="revolution/js/jquery.themepunch.tools.min.js"></script>
-        <script type="text/javascript" src="revolution/js/jquery.themepunch.revolution.min.js"></script>
-        <!-- revolution slider extensions (load below extensions JS files only on local file systems to make the slider work! The following part can be removed on server for on demand loading) -->
-        <script type="text/javascript" src="revolution/js/extensions/revolution.extension.actions.min.js"></script>
-        <script type="text/javascript" src="revolution/js/extensions/revolution.extension.carousel.min.js"></script>
-        <script type="text/javascript" src="revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
-        <script type="text/javascript" src="revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
-        <script type="text/javascript" src="revolution/js/extensions/revolution.extension.migration.min.js"></script>
-        <script type="text/javascript" src="revolution/js/extensions/revolution.extension.navigation.min.js"></script>
-        <script type="text/javascript" src="revolution/js/extensions/revolution.extension.parallax.min.js"></script>
-        <script type="text/javascript" src="revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
-        <script type="text/javascript" src="revolution/js/extensions/revolution.extension.video.min.js"></script>
-        <!-- setting -->                        
-        <script type="text/javascript" src="js/main.js"></script>        
-    </body>
+            <div class="web-dev-image">
+                <img src="images/image copy 16.png" alt="Вэб сайт хөгжүүлэлт">
+            </div>
+
+            <div class="web-dev-content">
+                <span class="web-dev-label">WEB DEVELOPMENT</span>
+
+                <h2>Вэб сайт хөгжүүлэлт.</h2>
+
+                <h4>Бүх төрлийн вэб сайтын хөгжүүлэлт.</h4>
+
+                <p>
+                    Та вэб сайт хийлгэх мэргэжлийн байгууллага хайж байна уу?
+                    Та итгэлтэй, найдвартай харилцагч хайж байна уу?
+                    Тэгвэл та манайд хандаарай. Бид сүүлийн үеийн шинэ, шилдэг
+                    технологиудыг ашиглан байгууллагын танилцуулга вэб сайтаас
+                    эхлүүлээд бүх төрлийн вэбийг мэргэжлийн өндөр түвшинд хийж
+                    гүйцэтгэж байна. Та бүхэн бидэнтэй хамтран ажилласнаар бид
+                    таны хүссэн вэбийг чанарын өндөр түвшинд, төлөвлөсөн цаг
+                    хугацаанд нь найдвартай хийж гүйцэтгэх болно.
+                </p>
+            </div>
+
+        </div>
+    </div>
+</section>  
+    <section class="clients-section" >
+        <p class="border-left">Хамтран ажиллагч байгууллагууд</p>
+        <div class="clients-wrapper">
+            <img src="images/image copy 10.png">
+            <img src="images/image copy 11.png">
+            <img src="images/image copy 12.png">
+            <img src="images/image copy 13.png">
+            <img src="images/image copy 14.png"> 
+            <img src="images/image copy 15.png">
+            <img src="images/image copy 7.png">
+            <img src="images/image copy 9.png">
+            <img src="images/image copy 17.png">
+            <img src="images/image copy 18.png">
+            <img src="images/image copy 19.png">
+            <img src="images/image copy 20.png">
+    </section>
+
+    <section class="wow fadeIn" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-8 col-md-10 mx-auto text-center">
+                    <h5 class="alt-font text-uppercase font-weight-600 text-extra-dark-gray margin-35px-bottom">Эмчийн web лүү зочилох
+                       </h5><a href="http://5.75.183.40:8081/"
+                        class="btn btn-medium btn-rounded btn-deep-pink">Эмчийн web 
+                        <i class="ti-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+<footer class="ashid-footer">
+    <div class="container">
+        <div class="ashid-footer-main">
+
+            <div class="ashid-footer-info">
+                <a href="#home" class="ashid-footer-logo">
+                    <img src="images/image copy 3.png" alt="Ashid Soft">
+                </a>
+
+                <p class="ashid-footer-desc">
+                    Шүдний эмнэлгийн өдөр тутмын үйл ажиллагааг цэгцтэй явуулах
+                    програм хангамжийн шийдэл.
+                </p>
+
+                <div class="ashid-footer-social">
+                    <span>Сошиал медиад</span>
+
+                    <a href="https://www.facebook.com/ashidsoft" target="_blank" aria-label="Facebook">
+                        <i class="fa-brands fa-facebook fa-xl"></i>
+                    </a>
+
+                    <a href="https://instagram.com/ashidsoft" target="_blank" aria-label="Instagram">
+                        <i class="fa-brands fa-instagram fa-xl"></i>
+                    </a>
+                </div>
+
+                <div class="ashid-footer-contact">
+                    <p><i class="fa-solid fa-envelope" style="color: rgb(215, 115, 29);"></i> mail хаяг: info@ashidsoft.mn</p>
+                    <p><i class="fa-solid fa-phone" style="color: rgb(215, 115, 29);"></i> Утас: +976 80013319</p>
+                    <p><i class="fa-solid fa-map-location-dot" style="color: rgb(215, 115, 29);"></i> Хаяг: Баруун 4 зам, Мандах их сургуулийн хойно Оюу төв 2-р<br>давхар, Ulaanbaatar, Mongolia</p>
+                </div>
+            </div>
+
+            <div class="ashid-footer-form-card">
+                <h4>Бидэнтэй холбогдох</h4>
+                <p>Таны имэйл болон зурвасыг бид хүлээн авна.</p>
+
+                <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                    <input 
+                        type="email" 
+                        name="email" 
+                        placeholder="Таны имэйл хаяг" 
+                        autocomplete="off" 
+                        required
+                    >
+
+                    <textarea 
+                        name="message" 
+                        rows="5" 
+                        placeholder="Зурвасаа бичнэ үү..." 
+                        autocomplete="off" 
+                        required
+                    ></textarea>
+
+                    <button type="submit">илгээх</button>
+                </form>
+            </div>
+
+        </div>
+
+        <div class="ashid-footer-bottom">
+            <span>© 2026 Ashid Soft LLC.</span>
+            <span>Ashid Soft · Software company</span>
+        </div>
+    </div>
+</footer>
+
+    <a class="scroll-top-arrow" href="javascript:void(0);"><i class="ti-arrow-up"></i></a>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/modernizr.js"></script>
+    <script type="text/javascript" src="js/bootstrap.bundle.js"></script>
+    <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+    <script type="text/javascript" src="js/skrollr.min.js"></script>
+    <script type="text/javascript" src="js/smooth-scroll.js"></script>
+    <script type="text/javascript" src="js/jquery.appear.js"></script>
+    <script type="text/javascript" src="js/bootsnav.js"></script>
+    <script type="text/javascript" src="js/jquery.nav.js"></script>
+    <script type="text/javascript" src="js/wow.min.js"></script>
+    <script type="text/javascript" src="js/page-scroll.js"></script>
+    <script type="text/javascript" src="js/swiper.min.js"></script>
+    <script type="text/javascript" src="js/jquery.count-to.js"></script>
+    <script type="text/javascript" src="js/jquery.stellar.js"></script>
+    <script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
+    <script type="text/javascript" src="js/isotope.pkgd.min.js"></script>
+    <script type="text/javascript" src="js/imagesloaded.pkgd.min.js"></script>
+    <script type="text/javascript" src="js/classie.js"></script>
+    <script type="text/javascript" src="js/hamburger-menu.js"></script>
+    <script type="text/javascript" src="js/counter.js"></script>
+    <script type="text/javascript" src="js/jquery.fitvids.js"></script>
+    <script type="text/javascript" src="js/skill.bars.jquery.js"></script>
+    <script type="text/javascript" src="js/justified-gallery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.easypiechart.min.js"></script>
+    <script type="text/javascript" src="js/instafeed.min.js"></script>
+    <script type="text/javascript" src="js/retina.min.js"></script>
+    <script type="text/javascript" src="revolution/js/jquery.themepunch.tools.min.js"></script>
+    <script type="text/javascript" src="revolution/js/jquery.themepunch.revolution.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+
 </html>
-    
